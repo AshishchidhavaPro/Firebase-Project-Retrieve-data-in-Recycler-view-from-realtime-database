@@ -67,5 +67,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
+    <Button
+
+        android:layout_marginTop="70dp"
+        android:onClick="readMultiple"
+        android:textSize="24sp"
+        android:text="Read Multiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 
 </LinearLayout>

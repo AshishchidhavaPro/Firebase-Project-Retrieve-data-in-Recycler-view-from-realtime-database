@@ -26,7 +26,7 @@ private PostAdapter postAdapter;
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("Post"), Post.class)
                         .build();
 
-        postAdapter=new PostAdapter(options);
+        postAdapter=new PostAdapter(options,this);
         recyclerview.setAdapter(postAdapter);
 
     }

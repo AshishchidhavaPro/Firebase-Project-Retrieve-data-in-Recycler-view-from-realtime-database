@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         String post="Title : "+dataSnapshot.child("Title").getValue(String.class)+"\n"+
-                                "Description : "+dataSnapshot.child("Description").getValue(String.class)+"\n"+
+                                    "Description : "+dataSnapshot.child("Description").getValue(String.class)+"\n"+
                                 "Author : "+dataSnapshot.child("Author").getValue(String.class);
                                 text.setText(post);
                             
@@ -80,5 +80,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(MainActivity.this,PostActivity.class);
         startActivity(intent);
 
+    }
+
+    public void readMultiple(View view) {
+        Intent intent=new Intent(this,ReadMultiplePost.class);
+        startActivity(intent);
     }
 }
